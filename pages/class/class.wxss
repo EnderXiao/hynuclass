@@ -244,6 +244,9 @@ background-image: linear-gradient(to bottom right, rgb(155, 88, 68), rgb(102, 88
   text-align: right;
   font-size: 25px;
 }
+.footer text{
+  margin: 0 5px 0 5px;
+}
 
 input{
   display: inline-flex;

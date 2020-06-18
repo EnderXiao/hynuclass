@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/class/class",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/subscription/subscription"
   ],
   "window": {
     "backgroundTextStyle": "light",

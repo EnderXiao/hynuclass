@@ -13,11 +13,12 @@
 		"autoAudits": false,
 		"coverView": true,
 		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false
+		"scopeDataCheck": false,
+		"useCompilerModule": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.0",
-	"appid": "wx87b2e9598df82c7d",
+	"appid": "wx064b82571d2be21f",
 	"projectname": "hynuclass",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -34,13 +35,28 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
-		"miniprogram": {
+		"gamePlugin": {
 			"current": -1,
 			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/class/class",
+					"pathName": "pages/class/class",
+					"scene": 1011
+				}
+			]
 		}
 	}
 }

@@ -24,7 +24,7 @@
 						<view class="td-day" style="width:8%;">
 							<text>{{month}}\n月</text>
 						</view>
-						<block wx:for="{{dayArray}}" wx:key="{{index}}">
+						<block wx:for="{{dayArray}}" wx:key="index">
 							<view class="td-day today" wx:if="{{item.day==day}}">{{item.day}}</view>
 							<view class="td-day" wx:else>{{item.day}}</view>
 						</block>
@@ -47,7 +47,7 @@
 						<view class="th">六</view>
 						<view class="th">七</view>
 					</view>
-					<block wx:for="{{listData}}" wx:key="{{ids}}" wx:for-index="idx">
+					<block wx:for="{{listData}}" wx:key="ids" wx:for-index="idx">
 						<view class="tr">
 							<view class="td-f">{{classArray[idx]}}</view>
 							<view id="{{idx*7}}" wx:if="{{item[0]== '' }}" class="td">
@@ -100,17 +100,15 @@
 							</view>
 						</view>
 					</block>
-
-
 				</view>
 
 			</scroll-view>
 		</view>
 	</view>
-
 	<view class="footer">
-    	<text class="cuIcon-refresh lg text-gray" bindtap="refresh" style="margin-right:5px"></text>
-		<text class="cuIcon-settings lg text-gray" bindtap="setting" style="margin-left:5px"></text>
+    <text class="cuIcon-refresh lg text-gray" bindtap="refresh"></text>
+		<text class="cuIcon-subscription lg text-gray" bindtap="subscription"></text>
+		<text class="cuIcon-settings lg text-gray" bindtap="setting"></text>
 	</view>
 	<modal hidden="{{hiddenmodalput}}" title="输入开学时间" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
 		<input type="number" bindinput="myMonth" maxlength="2" />

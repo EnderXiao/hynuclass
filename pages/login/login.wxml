@@ -21,13 +21,10 @@
                     </view>
                 </view>
                 <view class="card-content-tag ">
-                    <button form-type='submit' type="submit" class="card-tag-button animated slideInTop">登陆 </button>
+                    <button form-type='submit' type="submit" class="card-tag-button animated slideInLeft">登陆 </button>
                 </view>
-            
             </form>
-
         </view>
-
 
         <view class="slogan">
             <text>

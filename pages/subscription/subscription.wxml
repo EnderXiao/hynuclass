@@ -1,0 +1,8 @@
+<!--pages/subscription/subscription.wxml-->
+<view class="global">
+	<view class="card">
+		<view class="card-content">
+			<official-account bindload="loadSuccess" binderror="loadError" ></official-account>
+		</view>
+	</view>
+</view>
