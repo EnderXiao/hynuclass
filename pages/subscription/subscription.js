@@ -1,18 +1,23 @@
 // pages/subscription/subscription.js
+var app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    stateH: null,
+    states: false,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      stateH: app.hei
+    })
   },
 
   /**
@@ -62,5 +67,25 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  loadSuccess: function (e) {
+    console.log(e.detail.errMsg);
+    this.setData({
+      states: false,
+    })
+  },
+  loadError: function (e) {
+    console.log(e.detail.errMsg);
+    if (e.detail.status != 0) {
+      this.setData({
+        states: true,
+      })
+    }
+  },
+  back:function(e){
+    console.log("bbb");
+    wx.navigateTo({
+      url: '../class/class',
+    })
   }
 })

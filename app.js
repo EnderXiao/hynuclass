@@ -1,6 +1,24 @@
 //app.js
 App({
   onLaunch: function () {
+    var that = this;
+    console.log(that.hei);
+    wx.getStorage({
+      key: 'hei',
+      success: function (res) {
+        console.log(res);
+        that.hei = res.data;
+      },
+      fail(ern) {
+        that.hei = wx.getMenuButtonBoundingClientRect().top;
+        console.log(that.hei);
+
+        wx.setStorage({
+          key: 'hei',
+          data: that.hei,
+        })
+      }
+    })
     this.cookies = null;
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -36,6 +54,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    cookies: null
+    cookies: null,
+    hei: null
   }
 })

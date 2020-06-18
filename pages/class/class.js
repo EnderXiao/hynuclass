@@ -272,12 +272,6 @@ Page({
             inputDay: e.detail.value,
         })
     },
-    loadSuccess:function(e){
-        console.log(e.detail.errMsg);
-    },
-    loadError:function(e){
-        console.log(e.detail.errMsg);
-    },
     subscription: function(e){
         wx.redirectTo({
             url: '../subscription/subscription',
